@@ -209,7 +209,7 @@ function handleCreateSession(req, res) {
         imageUrl: "URL_TO_PICTURE_OF_PURCHASED_ITEM"
       }
     ],
-    returnUrl: `http://localhost:${PORT}/`
+    returnUrl: `https://3000-joeladyen-byoi-0nozo67ibq0.ws-us120.gitpod.io/`
   };
   Types.checkout.CreateCheckoutSessionRequest = createCheckoutSessionRequest
 
@@ -297,7 +297,7 @@ function handleAdvancedPayment(req, res) {
     merchantAccount: process.env.ADYEN_MERCHANT_ACCOUNT,
     countryCode: "IN",
     shopperLocale: "en-IN",
-    returnUrl: `http://localhost:${PORT}/`,
+    returnUrl: `https://3000-joeladyen-byoi-0nozo67ibq0.ws-us120.gitpod.io/`,
     shopperName: {
       firstName: "Buckaroo",
       lastName: "Banzai"
@@ -371,7 +371,7 @@ function handlePaymentDetails(req, res) {
   const config = new Config();
   config.apiKey = process.env.ADYEN_API_KEY;
   const client = new Client({ config });
-  client.setEnvironment("LIVE");
+  client.setEnvironment("LIVE", "8949b923f75af6b1");
 
   let body = JSON.parse(req.body);
 
@@ -405,7 +405,7 @@ console.log(response);
 // Load the certificate and key
 // const options = {
 //   key: fs.readFileSync('./certs/server.key'),
-//   cert: fs.readFileSync('./certs/server.cert')
+//   cert: fs.readFileSync('./certs/cerver.cert')
 // };
 
 // // console.log(options)
@@ -427,7 +427,7 @@ console.log(response);
 
 const PORT = 3000;
 server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Server running at https://localhost:${PORT}/`);
 
   dotenv.config({
     path: "./.env",
