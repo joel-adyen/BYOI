@@ -283,7 +283,7 @@ function handleAdvancedPayment(req, res) {
   const config = new Config();
   config.apiKey = process.env.ADYEN_API_KEY;
   const client = new Client({ config });
-  client.setEnvironment("LIVE");
+  client.setEnvironment("LIVE", "8949b923f75af6b1-AdyenTechSupportIndia");
 
   const body = JSON.parse(req.body);
   const amount = body.amount
@@ -371,7 +371,7 @@ function handlePaymentDetails(req, res) {
   const config = new Config();
   config.apiKey = process.env.ADYEN_API_KEY;
   const client = new Client({ config });
-  client.setEnvironment("LIVE", "8949b923f75af6b1");
+  client.setEnvironment("LIVE", "8949b923f75af6b1-AdyenTechSupportIndia");
 
   let body = JSON.parse(req.body);
 
