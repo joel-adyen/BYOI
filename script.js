@@ -28,6 +28,7 @@ function startSession() {
       environment: 'live',
       locale: 'en-IN',
       countryCode: 'IN',
+      originKey:  'pub.v2.ZNSLGS53H2P27QX3.aHR0cHM6Ly8zMDAwLWpvZWxhZHllbi1ieW9pLTBub3pvNjdpYnEwLndzLXVzMTIwLmdpdHBvZC5pbw.OmFcpqBJL6eeqeRhIP3UPbAqrN5HkjpUdgiV-AdprKk',
       clientKey: 'live_QGLCEPJPRVDQ7N5KUUG426B52ASWWXNZ',
 
       onPaymentCompleted: (result, component) => {
@@ -97,8 +98,9 @@ function startAdvanced() {
     const globalConfiguration = {
 
       environment: 'live',
-      locale: 'en-IN',
+      // locale: 'en-IN',
       countryCode: 'IN',
+      originKey:  'pub.v2.ZNSLGS53H2P27QX3.aHR0cHM6Ly8zMDAwLWpvZWxhZHllbi1ieW9pLTBub3pvNjdpYnEwLndzLXVzMTIwLmdpdHBvZC5pbw.OmFcpqBJL6eeqeRhIP3UPbAqrN5HkjpUdgiV-AdprKk',
       clientKey: 'live_QGLCEPJPRVDQ7N5KUUG426B52ASWWXNZ',
       amount: payload,
       // showPayButton: false, // onSubmit is called when typing return in last field
