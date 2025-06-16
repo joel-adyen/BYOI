@@ -1,0 +1,7 @@
+TODOs:
+• Get PayPal to work with Advanced Flow
+• Apple Pay
+• Google Pay
+• 3DS Redirect
+• 3DS Native
+• Set up components for both sessions and advanced

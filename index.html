@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <script src="https://checkoutshopper-live-in.cdn.adyen.com/checkoutshopper/sdk/6.13.1/adyen.js"
+     integrity="sha384-RxGQ2speO8mIr2OdCCtePyAvtV1Px+IabbiDa7f3EcYsU5vKOpVXV80/x21lAB4R"
+     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet"
+     href="https://checkoutshopper-live-in.cdn.adyen.com/checkoutshopper/sdk/6.13.1/adyen.css"
+     integrity="sha384-Uc2+7uMS+7KgxjNMPhpVZquar2b655d1RaUPWe/mJMO94euXqphe5aEzlj70wNS4"
+     crossorigin="anonymous">
+
+
+
+  <title>Basic Checkout API - v1</title>
+</head>
+<body>
+
+  <h1>Basic Checkout API - v1</h1>
+
+  <p >Please enter the values in the form field below.  <br>Then you can click either "Start Session" or "Start Advanced"</p>
+
+
+  <form id="frm1">
+    Amount: <input type="number" name="amount"><br>
+    Currency: <input type="text" name="currency"><br>
+  </form>
+
+  <div class="spacer1">__________________________</div>
+
+  <div class="buttonContainer">
+    <button onclick="startSession()" id="startSessionButton">Start Session</button>
+  </div>
+
+  <div class="spacer1">__________________________</div>
+
+  <div class="buttonContainer">
+    <button onclick="startAdvanced()" id="startAdvancedButton">Start Advanced</button>
+  </div>
+
+
+
+  <div class="spacer1"></div>
+
+  <div id="dropin-container"></div>
+
+
+
+  <div id="flash-message-container"></div>
+
+
+</body>
+
+
+<script src="/script.js"></script>
+</html>
