@@ -402,28 +402,6 @@ console.log(response);
 
 
 // ===== Start the server =======================
-// Load the certificate and key
-// const options = {
-//   key: fs.readFileSync('./certs/server.key'),
-//   cert: fs.readFileSync('./certs/cerver.cert')
-// };
-
-// // console.log(options)
-// const PORT = 4433;
-// https.createServer(options, (req, res) => {
-// }).listen(PORT, () => {
-
-//   dotenv.config({
-//     path: "./.env",
-//   });
-  
-//   console.log(`HTTPS server running at https://localhost:${PORT}/`);
-
-// });
-
-
-
-
 
 const PORT = 3000;
 server.listen(PORT, () => {
